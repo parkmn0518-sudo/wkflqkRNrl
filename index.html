@@ -417,8 +417,10 @@
       margin-bottom:2.5mm;
       border-bottom:1.3px solid #999;
       padding-bottom:2mm;
+      white-space:nowrap;
+      overflow:hidden;
     }
-    .print-roster-meta span{ margin-right:6mm; font-weight:400; color:#444; }
+    .print-roster-meta span{ margin-right:4mm; font-weight:400; color:#444; white-space:nowrap; }
     .print-roster-table{ width:100%; border-collapse:collapse; table-layout:fixed; }
     .print-roster-table col.col-no{ width:9.2mm; }
     .print-roster-table col.col-gender{ width:9.2mm; }
@@ -454,7 +456,7 @@
     <button class="btn btn-light" onclick="resetSeats()">↺ 초기화</button>
     <button class="btn btn-light" onclick="exportExcel()">⬇ 저장</button>
     <button class="btn btn-light" onclick="printChart()" title="인쇄 대화상자에서 용지 방향은 자동으로 '가로'가 적용됩니다.">🖨 인쇄</button>
-    <span class="print-hint">인쇄 시 용지 방향은 자동으로 가로로 맞춰져요</span>
+    <span class="print-hint">인쇄 대화상자에서 "머리글과 바닥글"을 꺼주세요 (주소/페이지번호 제거). 용지 방향은 자동으로 가로로 맞춰져요</span>
   </div>
 </header>
 
@@ -1128,5 +1130,3 @@ renderSeats();
 </script>
 </body>
 </html>
-
-
